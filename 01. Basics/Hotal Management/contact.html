@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hotel Management System</title>
+    <link rel="stylesheet" href="ContactPage.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact-container">
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or inquiries, feel free to reach out to us using the following contact details:</p>
+            <p>Email: <a href="Singhnitish627@gmail.com">Singhnitish627@gmail.com</a></p>
+            <p>Phone: <a href="Mob:- 8285934814">+918285934814</a></p>
+            <p>Address: 123 Hotel Street, City, Country</p>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- JavaScript code -->
+    <script>
+       
+        document.addEventListener("DOMContentLoaded", function () {
+            // This code will run after the page has loaded
+            console.log("Contact page loaded!");
+
+            // Access the contact form
+            const contactForm = document.getElementById("contactForm");
+
+            // Add an event listener to the form for submission
+            contactForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Retrieve and log the contact form input values
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const message = document.getElementById("message").value;
+
+                console.log("Contact Form Submitted:");
+                console.log("Name:", name);
+                console.log("Email:", email);
+                console.log("Message:", message);
+
+                // You can add further processing or send the message to a server here
+            });
+        });
+    </script>
+</body>
+</html>

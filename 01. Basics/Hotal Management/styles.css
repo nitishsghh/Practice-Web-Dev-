@@ -1,0 +1,50 @@
+/* Target the header element and set its background color */
+header {
+    background-color: #825151; /* You can use any color code or color name */
+    color: #fff; /* Set text color to white or another contrasting color */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+/* Add or extend styles for the Home page */
+
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the hotel introduction section */
+.hotel-intro {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Style the featured highlights section */
+.featured-highlights {
+    margin-top: 20px;
+}
+
+.highlight {
+    background-color: #ba1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(38, 13, 50, 0.2);
+}
+
+.highlight h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    
+}

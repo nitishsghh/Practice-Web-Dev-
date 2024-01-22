@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Reservation System</h1>
+    </header>
+    <main>
+        <section class="room-selection">
+            <h2>Select a Room</h2>
+            <div class="room-options">
+                <div class="room">
+                    <h3>Single Room</h3>
+                    <p>Price: $100/night</p>
+                    <button onclick="reserveRoom('Single Room')">Reserve</button>
+                </div>
+                <div class="room">
+                    <h3>Double Room</h3>
+                    <p>Price: $150/night</p>
+                    <button onclick="reserveRoom('Double Room')">Reserve</button>
+                </div>
+                <!-- Add more room options as needed -->
+            </div>
+        </section>
+        <section class="reservation-details">
+            <h2>Reservation Details</h2>
+            <label for="check-in-date">Check-in Date:</label>
+            <input type="date" id="check-in-date">
+            <label for="check-out-date">Check-out Date:</label>
+            <input type="date" id="check-out-date">
+            <button onclick="confirmReservation()">Confirm Reservation</button>
+            <div id="confirmation-message"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

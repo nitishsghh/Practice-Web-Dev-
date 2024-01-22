@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Hotel Management System</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <header>
+        <h1>Make a Reservation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="reservation-form">
+            <h2>Reservation Details</h2>
+            <form>
+                <label for="check-in-date">Check-in Date:</label>
+                <input type="date" id="check-in-date" required>
+                <label for="check-out-date">Check-out Date:</label>
+                <input type="date" id="check-out-date" required>
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" required>
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" required>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <!-- Add more room types as needed -->
+                </select>
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Hotel Management System</p>
+    </footer>
+
+     <!-- JavaScript code -->
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // This code will run after the page has loaded
+            console.log("Reservation page loaded!");
+
+            // Access the reservation form
+            const reservationForm = document.getElementById("reservationForm");
+
+            // Add an event listener to the form for submission
+            reservationForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Retrieve and log the reservation details
+                const checkInDate = document.getElementById("check-in-date").value;
+                const checkOutDate = document.getElementById("check-out-date").value;
+                const numGuests = document.getElementById("guests").value;
+                const roomType = document.getElementById("room-type").value;
+
+                console.log("Reservation Details:");
+                console.log("Check-in Date:", checkInDate);
+                console.log("Check-out Date:", checkOutDate);
+                console.log("Number of Guests:", numGuests);
+                console.log("Room Type:", roomType);
+
+                // You can add further processing or send the reservation details to a server here
+            });
+        });
+    </script>
+</body>
+</html>

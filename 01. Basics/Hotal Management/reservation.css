@@ -1,0 +1,42 @@
+/* Add or extend styles for the Reservation page */
+
+/* Style the reservation form section */
+.reservation-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+/* Style the reservation form labels */
+.reservation-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Style the reservation form inputs and select */
+.reservation-form input[type="date"],
+.reservation-form input[type="number"],
+.reservation-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Style the reservation form button */
+.reservation-form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reservation-form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* You can continue to add more specific styles as needed */
